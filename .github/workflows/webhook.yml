@@ -5,7 +5,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-
 jobs:
   send-webhook:
     runs-on: ubuntu-latest
