@@ -12,7 +12,7 @@ jobs:
       - name: Send webhook to Flask server
         run: |
           echo "Starting webhook test"
-          curl -v -X POST https://19d6-2409-40e3-189-cc78-e029-cda8-e05e-ff2.ngrok-free.app \
+          curl -v -X POST https://19d6-2409-40e3-189-cc78-e029-cda8-e05e-ff2.ngrok-free.app/webhook \
           -H "Content-Type: application/json" \
           -H "X-GitHub-Event: ${{ github.event_name }}" \
           -d '${{ toJson(github) }}'
